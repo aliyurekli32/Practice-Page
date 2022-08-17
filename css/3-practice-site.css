@@ -10,6 +10,8 @@ body {
 
 /** NAV-TOP */
 nav.nav-top {
+  /* width: 70px; */
+  height: 50px;
   background-image: linear-gradient(
     to right,
     rgb(119, 99, 99),
@@ -18,19 +20,29 @@ nav.nav-top {
 }
 
 nav.nav-top img {
-  width: 50px;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 30px;
+  border: 1px solid red;
+  outline: 1px solid black;
+  outline-offset: 2px;
 }
 
 .nav-top .sign-in {
   float: right;
-  margin: 1.5rem 1rem;
+  margin: 0.5rem 1rem;
   color: white;
-  font-weight: 700;
+  font-weight: 200;
+  
 }
 
 .nav-top .sign-in a {
   color: white;
+  
   text-decoration: none;
+  
+  font-size: xx-small;
 }
 
 .nav-top .sign-in a:hover {
@@ -42,4 +54,43 @@ nav.nav-top img {
 }
 
 /** NAV-MAIN */
+nav.nav-main {
+  width:100%;
+  height: 70px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  /*  */
+  background-color: orange;
+}
+nav.nav-main a {
+  display: inline-block;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 15px;
+  text-decoration: none;
+  color: black;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: larger;
+  font-family: cursive;
+}
+nav.nav-main a:hover {
+  color: white;
+}
+footer img{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width:20px;
+  background-color: black;
+  outline: 1px solid orange;
+  border: 1px solid orange;
+  border-radius: 50px; 
+}
+footer img:hover {
+  background-color: white;
+  color: white;
+  cursor: pointer;
+}
 
